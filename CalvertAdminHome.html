@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Justified Nav Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- Glyphicons --> 
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+           <!-- Custom styles for this template -->
+    <link href="css/sticky-footer.css" rel="stylesheet" />
+      <!-- JQUERY -->
+    <script src="js/jquery.js"></script>
+  <!-- JQUERY END-->
+   <!-- JS-->
+    <script src="js/bootstrap.js"></script>
+  <!-- JS END-->
+   
+  <!-- COLLAPSIBLE DIV SCRIPT -->
+        
+      <script type="text/javascript">
+          jQuery(document).ready(function () {
+              jQuery(".eggs").hide();
+              //toggle the componenet with class msg_body
+              jQuery(".scrambled").click(function () {
+                  jQuery(this).next(".eggs").slideToggle(500);
+              });
+          });
+       </script>
+
+  <!-- END COLLAPSIBLE DIV SCRIPT -->
+
+
+      <style>
+          td {
+              width: 25%
+          }
+          th {
+              width: 25%;
+              text-align:left;
+          }
+          .table {
+              text-align: left;
+              margin-bottom:0px;
+          }
+          a {
+              cursor: pointer;
+          }
+          .navbar {
+                position: static;
+          }
+
+      </style>
+
+  </head>
+
+
+
+
+  <body>
+
+   
+<!-- LOGO -->
+<div class="row" style="margin-top:15px">
+<div class="container">
+    <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                <img class="img-responsive" src="img/Calvert%20Logo.jpg" />
+            </div>
+
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="row">
+                <div class="input-group pull-right col-xs-12 col-sm-8 col-md-6">
+                  <input type="text" class="form-control" placeholder="Search . . . ">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span> <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                      <li><a href="#">Search Offerings</a></li>
+                      <li><a href="#">Search Clients</a></li>
+                      <li><a href="#">Search Transactions</a></li>
+                    </ul>
+                  </div>
+                  </div>
+                  </div>
+                <div class="row">
+                    <p style="margin-left:20px;margin-top:45px;font-size:34px">Investor Management Platform</p>
+                </div>
+                  
+            </div>
+           
+    </div>
+</div>
+ 
+ <!-- LOGO END -->
+ 
+    <div class="container">
+
+       <!-- NAVBAR -->
+        <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Dashboard</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Transactions</a></li>
+      <li><a href="#">Payments-In</a></li>
+      <li><a href="#">Payments-Out</a></li>
+      <li><a href="#">Investors</a></li>
+      <li><a href="#">Data</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Legal</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+
+        <!-- NAVBAR END -->
+
+
+     
+    
+
+        <!-- TRANSACTION HISTORY -->
+
+<div class="container">
+    <h2 style="font-size:44px;margin-bottom:30px">Dashboard</h2>
+    <div class="col-xs-3 well">
+        <h3>ACH Min. Balance</h3>
+        <p><strong>Before Date:&nbsp</strong>1/13/2014</p>
+        <p><strong>Balance Needed:&nbsp</strong>$34,575</p>
+        <a class="btn btn-primary" style="margin-top:20px;margin-bottom:45px">Transfer Funds</a>
+    </div>
+    <div class="col-xs-1"></div>
+
+    <div class="col-xs-8  well">
+        <div class="col-md-9 col-sm-6 col-xs-12">
+            <h3>Open Alerts</h3>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" style="padding-top:30px">
+            
+            <a href="Transactions.html"><p class="pull-right"><strong>View Alert History ></strong></p></a>
+        </div>
+    
+    <table class="table table-hover table-responsive table-condensed">
+	  <thead>
+      <tr>
+          <th>Alert Type</th>
+          <th>Date/Time</th>
+          <th>Status</th>
+          <th>Details</th>                                          
+      </tr>
+  </thead> 
+        </table>
+<div class="scrambled">         
+     <table class="table table-hover table-responsive table-condensed">
+<tbody>
+    <tr>
+        <td>Failed Payment-Out</td>
+        <td>2012/05/06 6:43am EST</td>
+        <td><span class="label label-danger">Open</span></td>
+        <td><a>Vew Detials</a></td>
+                                              
+    </tr>
+    <tr>
+        <td>Failed Ofac</td>
+        <td>2012/05/06 10:22am EST</td>
+        <td><span class="label label-danger">Open</span></td>
+        <td><a>Vew Detials</a></td>
+                                              
+    </tr>
+    <tr>
+        <td>Excessive Transactions</td>
+        <td>2012/05/06 11:47am EST</td>
+        <td><span class="label label-danger">Open</span></td>
+        <td><a>Vew Detials</a></td>
+                                              
+    </tr>
+    <tr>
+        <td>Large Investment</td>
+        <td>2012/05/06 12:22pm EST</td>
+        <td><span class="label label-danger">Open</span></td>
+        <td><a>Vew Detials</a></td>
+                                              
+    </tr>
+   </tbody>
+</table>
+</div>
+        
+    </div>
+</div>
+
+
+
+      <br />
+      <br />
+      <br />
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 col-sm-6 col-xs-12">
+            <h2>Rescent Transactions</h2>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" style="padding-top:30px">
+            
+            <a href="Transactions.html"><p class="pull-right"><strong>View All Transactions ></strong></p></a>
+        </div>
+    </div>
+    <table class="table table-hover table-responsive table-condensed">
+	  <thead>
+      <tr>
+          <th>Client Name</th>
+          <th>Transaction Date</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Details</th>                                          
+      </tr>
+  </thead> 
+        </table>
+<div class="scrambled">         
+     <table class="table table-hover table-responsive table-condensed">
+<tbody>
+    <tr>
+        <td><a>Donna R. Folse</a></td>
+        <td>2012/05/06</td>
+        <td>$20,000</td>
+        <td><span class="label label-warning">In Progress</span></td>
+        <td><a>Vew Detials</a></td>
+                                              
+    </tr>
+   </tbody>
+</table>
+</div>
+<div class="eggs well">
+    <div class="container">
+    <table class="table table-hover table-responsive table-condensed">
+	  <thead>
+      <tr>
+          <th>Offering Name</th>
+          <th>Amount</th>
+          <th>Impact Geography</th>
+          <th>Impact Style</th>
+          <th>Vehicle Type</th>
+          <th>Status</th>                                          
+      </tr>
+  </thead> 
+        <tbody>
+    <tr>
+        <td><a>Calvert Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-warning">In Progress</span></td>
+                                               
+    </tr>
+             <tr>
+        <td><a>Enterprise Impact Note</a></td>
+        <td>$10,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-warning">In Progress</span></td>
+                                               
+    </tr>
+            <tr>
+        <td><a>Nature Conservancy Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Environment/Sustainability</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+   </tbody>
+        </table>
+</div>
+</div>
+<div class="scrambled">         
+ <table class="table table-hover table-responsive table-condensed">
+	  
+<tbody>
+    <tr>
+        <td><a>Enrique Iglesias</a></td>
+        <td>2012/05/06</td>
+        <td>$150,000</td>
+        <td><span class="label label-danger">Failed</span></td> 
+        <td><a>Vew Detials</a></td>                                    
+    </tr>
+   </tbody>
+</table>
+</div>
+<div class="eggs well">
+    <div class="container">
+    <table class="table table-hover table-responsive table-condensed">
+	  <thead>
+      <tr>
+          <th>Offering Name</th>
+          <th>Amount</th>
+          <th>Impact Geography</th>
+          <th>Impact Style</th>
+          <th>Vehicle Type</th>
+          <th>Status</th>                                          
+      </tr>
+  </thead> 
+        <tbody>
+    <tr>
+        <td><a>Calvert Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-danger">Failed</span></td> 
+                                               
+    </tr>
+             <tr>
+        <td><a>Enterprise Impact Note</a></td>
+        <td>$10,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+            <tr>
+        <td><a>Nature Conservancy Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Environment/Sustainability</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+   </tbody>
+        </table>
+</div>
+</div>
+      <div class="scrambled">         
+     <table class="table table-hover table-responsive table-condensed">
+<tbody>
+    <tr>
+        <td><a>Donna R. Folse</a></td>
+        <td>2012/05/06</td>
+        <td>$20,000</td>
+        <td><span class="label label-success">Complete</span></td>
+        <td><a>Vew Detials</a></td>
+                                              
+    </tr>
+   </tbody>
+</table>
+</div>
+<div class="eggs well">
+    <div class="container">
+    <table class="table table-hover table-responsive table-condensed">
+	  <thead>
+      <tr>
+          <th>Offering Name</th>
+          <th>Amount</th>
+          <th>Impact Geography</th>
+          <th>Impact Style</th>
+          <th>Vehicle Type</th>
+          <th>Status</th>                                          
+      </tr>
+  </thead> 
+        <tbody>
+    <tr>
+        <td><a>Calvert Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+             <tr>
+        <td><a>Enterprise Impact Note</a></td>
+        <td>$10,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+            <tr>
+        <td><a>Nature Conservancy Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Environment/Sustainability</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+   </tbody>
+        </table>
+</div>
+</div>
+<div class="scrambled">         
+ <table class="table table-hover table-responsive table-condensed">
+	  
+<tbody>
+    <tr>
+        <td><a>Enrique Iglesias</a></td>
+        <td>2012/05/06</td>
+        <td>$150,000</td>
+        <td><span class="label label-success">Complete</span></td>
+        </td>   
+        <td><a>Vew Detials</a></td>                                    
+    </tr>
+   </tbody>
+</table>
+</div>
+<div class="eggs well">
+    <div class="container">
+    <table class="table table-hover table-responsive table-condensed">
+	  <thead>
+      <tr>
+          <th>Offering Name</th>
+          <th>Amount</th>
+          <th>Impact Geography</th>
+          <th>Impact Style</th>
+          <th>Vehicle Type</th>
+          <th>Status</th>                                          
+      </tr>
+  </thead> 
+        <tbody>
+    <tr>
+        <td><a>Calvert Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+             <tr>
+        <td><a>Enterprise Impact Note</a></td>
+        <td>$10,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+            <tr>
+        <td><a>Nature Conservancy Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Environment/Sustainability</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+   </tbody>
+        </table>
+</div>
+</div>
+      <div class="scrambled">         
+     <table class="table table-hover table-responsive table-condensed">
+<tbody>
+    <tr>
+        <td><a>Donna R. Folse</a></td>
+        <td>2012/05/06</td>
+        <td>$20,000</td>
+        <td><span class="label label-success">Complete</span></td>
+        <td><a>Vew Detials</a></td>
+                                              
+    </tr>
+   </tbody>
+</table>
+</div>
+<div class="eggs well">
+    <div class="container">
+    <table class="table table-hover table-responsive table-condensed">
+	  <thead>
+      <tr>
+          <th>Offering Name</th>
+          <th>Amount</th>
+          <th>Impact Geography</th>
+          <th>Impact Style</th>
+          <th>Vehicle Type</th>
+          <th>Status</th>                                          
+      </tr>
+  </thead> 
+        <tbody>
+    <tr>
+        <td><a>Calvert Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+             <tr>
+        <td><a>Enterprise Impact Note</a></td>
+        <td>$10,000</td>
+        <td>US</td>
+        <td>Housing / CDFI</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+            <tr>
+        <td><a>Nature Conservancy Note</a></td>
+        <td>$5,000</td>
+        <td>US</td>
+        <td>Environment/Sustainability</td>
+        <td>Note</td>
+        <td><span class="label label-success">Complete</span></td>
+                                               
+    </tr>
+   </tbody>
+        </table>
+</div>
+</div>
+</div>
+        
+          
+ 
+			
+
+       <!-- END TRANSACTION HISTORY -->
+
+      <!-- BEGIN OFFERINGS -->
+
+
+   <div class="row">
+      <div class="container">
+    <div class="row">
+        <div class="col-md-9 col-sm-6 col-xs-12" style="margin-bottom:20px">
+            <h2>Impact Offerings</h2>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" style="padding-top:30px">
+            
+            <a href="Offerings.html"><p class="pull-right"><strong>View All Offerings ></strong></p></a>
+        </div>
+    </div>
+       </div>
+    </div>
+
+
+
+        <!-- PRODUCT 1 -->
+      <div class="row">
+      <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="well">
+              <img class="img-responsive" src="img/Stock%20Landscape.jpg" />
+              <h2>Community Investment Note</h2>
+            <h3>Calvert Foundation</h3>
+            <p>Through the Community Investment Note we fund affordable housing, creating jobs, protecting the environment, and many other forms of social good.</p>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left" >
+              <p><strong>Investment Vehicle</strong></p>
+                    <p>Note</p>
+              <p><strong>Term(s)</strong></p>
+              <p>1, 3, 5 yrs</p>
+              <p><strong>Rates</strong></p>
+            <p>0,75%, 1.5%, 2.5%</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left" style="text-align:center">
+                <p><strong>Impact Style</strong></p>
+                <div width="100%">
+                    <img src="img/home_badge.png" />
+                    <img src="img/leak_badge%20(1).png" />
+                    <img src="img/script_badge%20(1).png" />
+                </div>
+                <br />
+                <p><strong>Impact Location</strong></p>
+                <p>Global</p>
+            </div>
+            <div width="100%">
+              <div style="width:125px; margin:auto">
+              <p><a class="btn btn-large btn-success" href="OfferingDetail.html">View Details &raquo;</a></p>
+            </div>
+            </div>
+          </div>
+          </div>
+
+
+
+          
+
+ <!-- PRODUCT 2 -->
+      
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="well">
+              <img class="img-responsive" src="img/Stock%20Landscape.jpg" />
+              <h2>Community Investment Note</h2>
+            <h3>Calvert Foundation</h3>
+            <p>Through the Community Investment Note we fund affordable housing, creating jobs, protecting the environment, and many other forms of social good.</p>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left" >
+              <p><strong>Investment Vehicle</strong></p>
+                    <p>Note</p>
+              <p><strong>Term(s)</strong></p>
+              <p>1, 3, 5 yrs</p>
+              <p><strong>Rates</strong></p>
+            <p>0,75%, 1.5%, 2.5%</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left" style="text-align:center">
+                <p><strong>Impact Style</strong></p>
+                <div width="100%">
+                    <img src="img/home_badge.png" />
+                    <img src="img/leak_badge%20(1).png" />
+                    <img src="img/script_badge%20(1).png" />
+                </div>
+                <br />
+                <p><strong>Impact Location</strong></p>
+                <p>Global</p>
+            </div>
+            <div width="100%">
+              <div style="width:125px; margin:auto">
+              <p><a class="btn btn-large btn-success" href="OfferingDetail.html">View Details &raquo;</a></p>
+            </div>
+            </div>
+          </div>
+          </div>
+         
+
+          <!-- PRODUCT 3 -->
+          
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="well">
+              <img class="img-responsive" src="img/Stock%20Landscape.jpg" />
+              <h2>Community Investment Note</h2>
+            <h3>Calvert Foundation</h3>
+            <p>Through the Community Investment Note we fund affordable housing, creating jobs, protecting the environment, and many other forms of social good.</p>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left" >
+              <p><strong>Investment Vehicle</strong></p>
+                    <p>Note</p>
+              <p><strong>Term(s)</strong></p>
+              <p>1, 3, 5 yrs</p>
+              <p><strong>Rates</strong></p>
+            <p>0,75%, 1.5%, 2.5%</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left" style="text-align:center">
+                <p><strong>Impact Style</strong></p>
+                <div style="width:100%">
+                    <img src="img/home_badge.png" />
+                    <img src="img/leak_badge%20(1).png" />
+                    <img src="img/script_badge%20(1).png" />
+                </div>
+                <br />
+                <p><strong>Impact Location</strong></p>
+                <p>Global</p>
+            </div>
+            <div width="100%">
+              <div style="width:125px; margin:auto">
+              <p><a class="btn btn-large btn-success" href="OfferingDetail.html">View Details &raquo;</a></p>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+          </div>
+      <!-- /.body-content -->
+
+      <!-- Site footer -->
+      <div class="container">
+      <div id="footer" style="margin-top:50px;margin-bottom:25px">
+      <div class="container">
+        <p class="muted-text credit">All securities offered through <a>Hexagon Securities, LLC &nbsp</a>| Member <a>FINRA/SIPC</a></p>
+        <p class="text-muted credit"> <a style="margin-right:25px">Broker Dealer Responsibilities</a>
+            <a style="margin-right:40px"> Risks of Investing in Securities</a>
+            <a style="margin-right:40px"> About</a>
+            <a style="margin-right:40px"> Legal</a>
+        </p>
+      </div>
+    </div>
+   </div>
+   
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
